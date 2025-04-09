@@ -15,18 +15,6 @@ def menu():
     return input('Digite o número da operação desejada: ')
 
 
-
-
-
-
-
-saldo = 1500
-depositos = []
-saques = []
-id_deposito = 1
-id_saque = 1
-quant_saques = 3
-
 def saque(*, saldo, valor, quant_saques, saques, id_saque):
 
     if quant_saques > 0:
@@ -154,10 +142,10 @@ def main():
 
             valor = float(input('Digite o valor que deseja depositar em sua conta: '))
 
-            saldo, depositos, id_deposito = deposito(saldo=saldo, 
-                                                    valor=valor, 
-                                                    depositos=depositos, 
-                                                    id_deposito=id_deposito)
+            saldo, depositos, id_deposito = deposito(saldo, 
+                                                    valor, 
+                                                    depositos, 
+                                                    id_deposito)
 
 
         elif operacao == '3':
